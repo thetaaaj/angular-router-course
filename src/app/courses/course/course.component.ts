@@ -18,6 +18,9 @@ export class CourseComponent implements OnInit {
 
   ngOnInit() {
     this.course = this.route.snapshot.data['course'];
+    this.route.queryParams.subscribe((param) => {
+      this.couponCode = param.couponCode;
+    })
     console.log(this.course);
 
   }
