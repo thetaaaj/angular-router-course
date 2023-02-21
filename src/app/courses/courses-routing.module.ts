@@ -19,11 +19,11 @@ const routes: Routes = [
         path: '',
         component: LessonsListComponent,
         resolve: {
-          lessons: LessonsResolver
+          lesson: LessonsResolver
         }
       },
       {
-        path: 'lessons/:lessonSeqNo',
+        path: 'lesson/:lessonSeqNo',
         component: LessonDetailComponent,
         resolve: {
           lesson: LessonDetailResolver

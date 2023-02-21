@@ -27,11 +27,11 @@ export class LessonDetailComponent implements OnInit {
   }
 
   previous(lesson: LessonDetail) {
-    this.router.navigate(['lessons', lesson.seqNo - 1], { relativeTo: this.route.parent });
+    this.router.navigate(['lesson', lesson.seqNo - 1], { relativeTo: this.route.parent });
   }
 
   next(lesson: LessonDetail) {
-    this.router.navigate(['lessons', lesson.seqNo + 1], { relativeTo: this.route.parent });
+    this.router.navigate(['lesson', lesson.seqNo + 1], { relativeTo: this.route.parent });
   }
 
 

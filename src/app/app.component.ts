@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {AuthStore} from './services/auth.store';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { AuthStore } from './services/auth.store';
 
 
 
@@ -8,19 +9,22 @@ import {AuthStore} from './services/auth.store';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements  OnInit {
+export class AppComponent implements OnInit {
 
-    constructor(public auth: AuthStore) {
+  constructor(public auth: AuthStore) {
 
-    }
+  }
 
-    ngOnInit() {
+  ngOnInit() {
 
 
-    }
+  }
+
+
+
 
   logout() {
-        this.auth.logout();
+    this.auth.logout();
 
   }
 
