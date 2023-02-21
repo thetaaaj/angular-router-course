@@ -21,7 +21,6 @@ export class CourseComponent implements OnInit {
     this.route.queryParams.subscribe((param) => {
       this.couponCode = param.couponCode;
     })
-    console.log(this.course);
 
   }
 

@@ -6,7 +6,7 @@ export interface LessonDetail {
   duration: string;
   seqNo: number;
   courseId: number;
-  videoId:string;
-  first:boolean;
-  last:boolean;
+  videoId: string;
+  first: boolean;
+  last: boolean;
 }

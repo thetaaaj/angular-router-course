@@ -1,8 +1,6 @@
 import { Injectable } from "@angular/core";
 import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from "@angular/router";
 import { Observable } from "rxjs";
-import { first } from "rxjs/operators";
-import { Course } from "../model/course";
 import { LessonSummary } from "../model/lesson-summary";
 import { CoursesService } from "./courses.service";
 
